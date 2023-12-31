@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Survey Form</title>
+</head>
+<body>
+    <div class="form-page">
+
+  <h1 id="title">Viorel's survey form</h1>
+  
+  <p id="description">Personalized Form to collect data</p>
+  
+  <form id="survey-form" action="#" method="post">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    
+    <label for="number" id="number-label">Age:(optional)</label>
+    <input type="number" id="number" name="number" placeholder="Age" min="18" max="100">
+    
+    <label for="dropdown">Select an option:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="option 1">Male</option>
+      <option value="option 2">Female</option>
+      <option value="option 3">Non declared</option>
+    </select>
+    
+    <fieldset>
+      <legend>Choose your favourite season :</legend>
+      <label><input type="radio" name="radioGroup" value="option1">Spring </label>
+      <label><input type="radio" name="radioGroup" value="option2">Summer</label>
+       <label><input type="radio" name="radioGroup" value="option1">Autumn</label>
+        <label><input type="radio" name="radioGroup" value="option1">Winter</label>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Select your favourite month:(You can select more options</legend>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox1">January</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox2">February</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox3">March</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox4">April</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox5">May</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox6">June</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox7">July</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox8">August</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox9">September</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox10">October</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox11">November</label>
+      <label><input type="checkbox" name="checkboxGroup" value="checkbox12">December</label>
+    </fieldset>
+    
+    <label for="comments">Additional Comments:</label>
+    <textarea rows="4" cols="49" id="comments" name="comments" placeholder="Enter your comments"></textarea>
+    
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>
